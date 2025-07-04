@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css1.css">
+     <h3>Operations</h3>
+    <script>
+        function add()
+        {
+            var num1,num2,sum;
+            num1 = Number(document.getElementById("txtFirstNumber").value);
+            num2 = Number(document.getElementById("txtSecondNumber").value);
+            sum=num1+num2;
+            document.getElementById("txtAnswer").value=sum;
+        }
+         function sub()
+        {
+            var num1,num2,sum;
+            num1 = Number(document.getElementById("txtFirstNumber").value);
+            num2 = Number(document.getElementById("txtSecondNumber").value);
+            sum=num1-num2;
+            document.getElementById("txtAnswer").value=sum;
+        }
+        function mul()
+        {
+            var num1,num2,sum;
+            num1 = Number(document.getElementById("txtFirstNumber").value);
+            num2 = Number(document.getElementById("txtSecondNumber").value);
+            sum=num1*num2;
+            document.getElementById("txtAnswer").value=sum;
+        }
+        function div()
+        {
+            var num1,num2,sum;
+            num1 = Number(document.getElementById("txtFirstNumber").value);
+            num2 = Number(document.getElementById("txtSecondNumber").value);
+            sum=num1/num2;
+            document.getElementById("txtAnswer").value=sum;
+        }
+        function clean()
+        {
+            var num1,num2,sum;
+            num1 = Number(document.getElementById("txtFirstNumber").value="");
+            num2 = Number(document.getElementById("txtSecondNumber").value="");
+            
+            document.getElementById("txtAnswer").value=""
+        }
+    </script>
+</head>
+<body>
+    <p>First Number: <input id="txtFirstNumber"></p>
+    <p>Second Number: <input id="txtSecondNumber"></p>
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">sub</button>
+    <button onclick="mul()">mul</button>
+     <button onclick="div()">Div</button>
+    <button onclick="clean()">clean</button>
+    <p>sum=<input id="txtAnswer"></p>
+</body>
+</html>      

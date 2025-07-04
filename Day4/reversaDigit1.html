@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script type=text/javascript>
+function largestDigit()
+{
+    var     num=parseInt(document.getElementById("txtNumber").value);
+
+    var ld=0;
+    while(num>0)
+    {
+        rem=num%10;
+
+        if (rem>ld)
+            ld=rem;
+
+        num=parseInt(num/10);
+
+    }
+
+     document.getElementById("txtAns").value=ld;
+}
+
+    </script>
+</head>
+<body>
+    <p>Enter a Number:<input id="txtNumber"></p>
+   
+    <button onclick="largestDigit()">largestDigit</button>
+
+      <p>sum of digits:<input id="txtAns"></p>
+    
+</body>
+</html>
