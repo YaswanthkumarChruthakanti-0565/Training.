@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        u1{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25;
+            background-color:#f1f1f1;
+            border:1px solid #555;
+        }
+        li a{
+            display: block;
+            color:#000;
+            padding: 8px 16px;
+            text-decoration:none;
+        }
+        li a:hover{
+            background-color:#555;
+            color:#f1f1f1
+        }
+        li a.active{
+            background-color: #04a66b;
+            color:white;
+
+        }
+        li a:hover:not(.active){
+            background-color:#555;
+            color:white;
+        } ul{
+            list-style-type:none;
+            margin: 0;
+            padding:0;
+        }
+        li{
+            display: inline;
+        }
+        li{
+            display:list-item;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <p>In this example,we remove the bullect from the list,and its default padding and margin</p>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li style="float:right"><a class="active" href="#bout"></a></li>
+        </ul>
+    
+</body>
+</html>

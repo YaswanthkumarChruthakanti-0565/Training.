@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type:none;
+            margin: 0;
+            padding:0;
+            overflow: hidden;
+            background-color: #0f4e9c;
+        }
+        li{
+            float:left;
+        }
+        li a{
+            display:block;
+           color:white;
+           text-align: center;
+           padding: 14px 16px;
+           text-decoration: none;
+        }
+        li a:hover{
+            background-color:#e8ecf1;
+            color:rgb(5, 28, 48);
+
+        }
+        .active{
+            background-color: rgb(127, 176, 255);
+        }
+        li{
+            float: left;
+            border-right: 5px solid #bbb;
+        }
+        li:last-child{
+            border-right: none;
+        }
+        body{
+            margi :0;
+        }
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+            background-color:#333;
+            position:fixed;
+            top:0;
+            width:100%;
+        }
+       
+    </style>
+</head>
+<body>
+    <p>Mother Theresa College</p>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#self">Self</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#About">About</a></li>
+            <li style="float:right"><a class="active"href="#About">About</a></li>
+        </ul>
+        
+</body>
+</html>
