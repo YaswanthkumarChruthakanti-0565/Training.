@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css"href="feedback.css">
+  <meta charset="UTF-8">
+  <title>Faculty Feedback Form</title>
+</head>
+<body>
+  <form>
+    <h2>Faculty Feedback Form</h2>
+
+    <label for="facultyName">Faculty Name:</label>
+    <input type="text" id="facultyName" name="facultyName">
+
+    <label for="training">Training Attended:</label>
+    <select id="training" name="training">
+      <option value="">-- Select Training --</option>
+      <option value="Web Development">Web Development</option>
+      <option value="Python Programming">Python Programming</option>
+      <option value="Data Science">Data Science</option>
+    </select>
+
+    <b>Overall Rating:</b><br>
+    <label for="excellent">Excellent</label>
+    <input type="radio" id="excellent" name="rating" value="Excellent">
+    <label for="good">Good</label>
+    <input type="radio" id="good" name="rating" value="Good">
+    <label for="poor">Poor</label>
+    <input type="radio" id="poor" name="rating" value="Poor"><br>
+   
+
+   <b>Topics Covered:</b>
+   <label for="quality">Content Quality</label>
+    <input type="checkbox" id="quality" name="topics" value="Content Quality">
+    <label for="delivery">Delivery</label>
+    <input type="checkbox" id="delivery" name="topics" value="Delivery">
+    <label for="interaction">Interaction</label>
+    <input type="checkbox" id="interaction" name="topics" value="Interaction">
+    <label for="relevance">Relevance</label>
+    <input type="checkbox" id="relevance" name="topics" value="Relevance">
+   <label for="comments">Suggestions/Comments:</label>
+    <textarea id="comments" name="comments" placeholder="Write your feedback here..."></textarea>
+
+    <button type="submit">Submit Feedback</button>
+  </form>
+</body>
+</html>
