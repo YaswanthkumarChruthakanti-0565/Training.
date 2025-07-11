@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ A.G Restaurant.name }}</title>
+</head>
+<body>
+    <h1>{{ 🍗A.G Restaurant🥘 .name }}</h1>
+    {% if product.image %}
+        <img src="{{ product.image.url }}" alt="{{ product.name }}">
+    {% endif %}
+    <p>{{ product.description }}</p>
+    <p>Price: Rs{{ product.price }}</p>
+    <a href="/">Back to Products</a>
+</body>
+</html>
+
