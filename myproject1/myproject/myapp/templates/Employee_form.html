@@ -1,0 +1,14 @@
+<!-- Employee_form.html -->
+{%   extends  "master.html"  %}
+{% Employee title %}
+{% if form.instance.pk %}Update{% else %}Create{% endif %} Employee
+{% endblock %}
+
+{% Employee content  %}
+    <h1>{% if form.instance.pk %}Update{% else %}Create{% endif %}Employee</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+{% endblock %}
